@@ -1,0 +1,25 @@
+/* pages/record/record.wxss */
+
+.record_title {
+  padding: 0 0 0 25rpx;
+  height: 60rpx;
+  color:rgb(163, 163, 163);
+  font-size: 26rpx;
+  line-height: 70rpx;
+}
+
+.chosen {
+  margin-top: 10rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  padding: 0 0 0 25rpx;
+  background: #fff;
+}
+.chosen_title{
+  padding: 0 0 0 25rpx;
+  height: 60rpx;
+  color:rgb(163, 163, 163);
+  font-size: 26rpx;
+  line-height: 70rpx;
+}

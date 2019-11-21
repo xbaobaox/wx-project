@@ -1,0 +1,58 @@
+/* pages/my/my.wxss */
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60rpx;
+  background-color: rgb(255, 255, 255);
+}
+
+.userinfo_text {
+  display: block;
+  margin-top: 40rpx;
+  color: #999;
+  margin-bottom: 30rpx;
+}
+
+.head_label {
+  margin-bottom: 30rpx;
+}
+
+.userinfo_img {
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 20rpx;
+}
+
+.head_label text {
+  font-size: 22rpx;
+  color: #fff;
+  background: rgb(9, 187, 7);
+  padding: 4rpx 12rpx;
+  border-radius: 6rpx;
+  margin-right: 4rpx;
+}
+
+.answer, .question, .language, .service, .about {
+  height: 80rpx;
+  background-color: #fff;
+  margin-top: 2rpx;
+  line-height: 80rpx;
+}
+
+.answer image, .question image, .language image, .service image, .about image {
+  width: 44rpx;
+  height: 44rpx;
+  padding: 0 40rpx;
+  vertical-align: -10rpx;
+}
+.answer{
+  margin-top: 50rpx;
+}
+.language{
+  margin-top: 20rpx;
+}
+.about{
+  margin-top: 20rpx;
+}
