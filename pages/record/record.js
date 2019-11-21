@@ -19,7 +19,8 @@ Page({
       header: {
         'content-type':'application/json'
       },
-      success:(res) => {
+      success: (res) => {
+        
         console.log(res.data);
       }
     })
