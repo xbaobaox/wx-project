@@ -13,7 +13,7 @@
       <text>答题记录</text>
     </navigator>
 
-    <navigator class="question">
+    <navigator class="question" url="../question/question">
       <image src="/image/出题记录.png"></image>
       <text>出题记录</text>
     </navigator>

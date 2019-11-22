@@ -6,6 +6,7 @@
   align-items: center;
   padding-top: 60rpx;
   background-color: rgb(255, 255, 255);
+  height: 350rpx;
 }
 
 .userinfo_text {
@@ -35,10 +36,12 @@
 }
 
 .answer, .question, .language, .service, .about {
-  height: 80rpx;
+  height: 100rpx;
   background-color: #fff;
   margin-top: 2rpx;
-  line-height: 80rpx;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color:#666;
 }
 
 .answer image, .question image, .language image, .service image, .about image {
