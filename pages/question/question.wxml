@@ -1,7 +1,9 @@
 <view class="container">
   <view class="record_title">筛选时间</view>
-  <picker mode="date" value="{{date}}" start="2015-09-01" end="2021-09-01" bindchange="bindDateChange">
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2021-09-01" fields="month" bindchange="bindDateChange">
     <view class="chosen">当前选择: {{data}}</view>
   </picker>
   <view class="chosen_title">{{data}}</view>
+  <navigator wx:for="{{subject}}" wx:key="{{index}}" class="chosen_content">{{item.name}}<image class="chosen_content_icon" src="../../image/right.png"></image>
+  </navigator>
 </view>
