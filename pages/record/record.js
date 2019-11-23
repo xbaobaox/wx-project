@@ -1,26 +1,27 @@
-// pages/record/record.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     data: '2019-11',
     subject: [],
     dialogShow: false,
     confirm: [{
       text: '确定'
-    }]
+    }],
+    itemContent: '',
+    details:''
   },
-  openConfirm() {
+  openConfirm(e) {
     this.setData({
-      dialogShow: true
+      dialogShow: true,
+      itemContent: e.currentTarget.dataset.item.name,
+      details:e.currentTarget.dataset.item.details
     })
+    console.log(e.currentTarget.dataset.item.name)
   },
   tapDialogButton(){
     this.setData({
       dialogShow:false
     })
+
   },
   bindDateChange(e) {
     this.setData({
@@ -40,7 +41,6 @@ Page({
           this.setData({
             subject: res.data.data
           })
-          // console.log(this.data.data)
           console.log(res.data.data.length);
         },
         fail: function(e) {

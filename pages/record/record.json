@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "mp-dialog":"../../weui/dialog/dialog"
-  }
+  },
+  "navigationBarTitleText": "答题记录"
 }
