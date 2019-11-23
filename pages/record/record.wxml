@@ -7,8 +7,8 @@
   <view class="chosen_title">{{data}}</view>
   <!-- <view wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}"> -->
     <!-- {{item.name}}<image class="chosen_content_icon" src="../../image/right.png"></image> -->
-    <mp-cells>
-      <mp-cell link hover value="{{item.name}}"  wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}">
+    <mp-cells ext-class="my-cells">
+      <mp-cell link="true" hover="true" value="{{item.name}}"  wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}" class="chosen_content">
       </mp-cell>
     </mp-cells>
   <!-- </view> -->
@@ -16,12 +16,4 @@
     <view style="color:black; margin-bottom:10rpx;">{{itemContent}}</view>
     {{details}}
   </mp-dialog>
-      <mp-cells title="">
-      <mp-cell link hover value="有hover效果" >
-      </mp-cell>
-      <mp-cell link value="无hover效果" >
-      </mp-cell>
-      <mp-cell link url="../index" value="无hover效果，带跳转URL" >
-      </mp-cell>
-    </mp-cells>
 </view>
