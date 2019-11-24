@@ -6,14 +6,18 @@
   </picker>
   <view class="chosen_title">{{data}}</view>
   <!-- <view wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}"> -->
-    <!-- {{item.name}}<image class="chosen_content_icon" src="../../image/right.png"></image> -->
-    <mp-cells ext-class="my-cells">
-      <mp-cell link="true" hover="true" value="{{item.name}}"  wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}" class="chosen_content">
-      </mp-cell>
-    </mp-cells>
+  <!-- {{item.name}}<image class="chosen_content_icon" src="../../image/right.png"></image> -->
+  <mp-cells ext-class="my-cells">
+    <mp-cell link="true" hover="true" value="{{item.name}}" wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}" class="chosen_content"></mp-cell>
+  </mp-cells>
   <!-- </view> -->
-  <mp-dialog title='回顾答题' show="{{dialogShow}}" buttons="{{confirm}}" bindbuttontap="tapDialogButton" mask="true">
-    <view style="color:black; margin-bottom:10rpx;">{{itemContent}}</view>
-    {{details}}
+  <mp-dialog title='回顾答题' show="{{dialogShow}}" buttons="{{confirm}}" bindbuttontap="tapDialogButton" mask="true" >
+      <view class="dialog_title">{{itemContent}}</view>
+    <view class="chosen_dialog">
+      <view>A: {{answersA}}</view>
+      <view>B: {{answersB}}</view>
+      <view>C: {{answersC}}</view>
+      <view>D: {{answersD}}</view>
+    </view>
   </mp-dialog>
 </view>

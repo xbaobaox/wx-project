@@ -7,15 +7,24 @@ Page({
       text: '确定'
     }],
     itemContent: '',
-    details:''
+    details: '',
+    answersA: [],
+    answersB: [],
+    answersC: [],
+    answersD: []
+    
   },
   openConfirm(e) {
     this.setData({
       dialogShow: true,
       itemContent: e.currentTarget.dataset.item.name,
-      details:e.currentTarget.dataset.item.details
+      details: e.currentTarget.dataset.item.details,
+      answersA: e.currentTarget.dataset.item.answers[0].name,
+      answersB: e.currentTarget.dataset.item.answers[1].name,
+      answersC: e.currentTarget.dataset.item.answers[2].name,
+      answersD: e.currentTarget.dataset.item.answers[3].name,
     })
-    console.log(e.currentTarget.dataset.item.name)
+    console.log(e.currentTarget.dataset.item.answers[0].name)
   },
   tapDialogButton(){
     this.setData({

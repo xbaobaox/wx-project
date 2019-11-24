@@ -31,12 +31,35 @@
   color: rgb(114, 114, 114);
   white-space: pre-wrap;
 }
-.chosen_content_icon{
+.chosen_content_icon {
   width: 24rpx;
   height: 24rpx;
   position: absolute;
   right: 5%;
   top: 0;
-  bottom:0;
-  margin:auto 0;
+  bottom: 0;
+  margin: auto 0;
+}
+.dialog_title{
+  color: #333;
+  font-size: 32rpx;
+  margin-top:30rpx;
+  text-align: left;
+  padding:0 30rpx;
+}
+.chosen_dialog {
+  margin-top:40rpx;
+  margin-bottom:80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  color: #666;
+  padding: 0 0 0 70rpx;
+ 
+  font-size: 30rpx;
+}
+.chosen_dialog view{
+  margin-bottom:20rpx ;
+  display: inline-block
 }
