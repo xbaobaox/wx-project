@@ -1,4 +1,5 @@
 @import "../../weui/weui-wxss/dist/style/weui.wxss";
+
 .record_title {
   padding: 0 0 0 30rpx;
   height: 60rpx;
@@ -31,6 +32,7 @@
   color: rgb(114, 114, 114);
   white-space: pre-wrap;
 }
+
 .chosen_content_icon {
   width: 24rpx;
   height: 24rpx;
@@ -40,26 +42,29 @@
   bottom: 0;
   margin: auto 0;
 }
-.dialog_title{
+
+.dialog_title {
   color: #333;
   font-size: 32rpx;
-  margin-top:30rpx;
+  margin-top: 30rpx;
   text-align: left;
-  padding:0 30rpx;
+  padding: 0 30rpx;
 }
+
 .chosen_dialog {
-  margin-top:40rpx;
-  margin-bottom:80rpx;
+  margin-top: 40rpx;
+  margin-bottom: 80rpx;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   align-content: flex-start;
   color: #666;
-  padding: 0 0 0 70rpx;
- 
+  padding: 0 40rpx;
+  text-align: left;
   font-size: 30rpx;
 }
-.chosen_dialog view{
-  margin-bottom:20rpx ;
-  display: inline-block
+
+.chosen_dialog view {
+  margin-bottom: 20rpx;
+  display: inline-block;
 }

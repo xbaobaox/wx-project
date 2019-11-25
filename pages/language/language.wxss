@@ -1,0 +1,8 @@
+/* pages/language/language.wxss */
+@import "../../weui/weui-wxss/dist/style/weui.wxss";
+.focus_cont{
+  background: #fff;
+}
+.unfocused_cont{
+  background: #fff;
+}
