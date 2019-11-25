@@ -41,7 +41,6 @@ Page({
     if(arr.length==1){
          index=1
     }
-    console.log(index)
     let addItem=anArr.concat(arr.splice(index,1));
     this.setData({
       focus:arr,

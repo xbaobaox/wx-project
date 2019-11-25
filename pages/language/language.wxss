@@ -6,3 +6,7 @@
 .unfocused_cont{
   background: #fff;
 }
+.wxif{
+  font-size: 26rpx;
+  color:#999;
+}
