@@ -3,17 +3,9 @@
 const app = getApp()
 Page({
   data: {
-    nav: [{
-        name: '最新发布'
-      },
-      {
-        name: '最近开始'
-      },
-      {
-        name: '最热门'
-      }
-    ],
-    x: 0
+    // nav: [{name: '最新发布' }, { name: '最近开始'},{ name: '最热门'}],
+    // x: 0
+
   },
   //事件处理函数
   bindViewTap: function() {
@@ -22,14 +14,13 @@ Page({
     })
   },
   // 选择
-  selectedNav(e) {
-    
-    const fuck = e.currentTarget.dataset.index
-    console.log(fuck);
-    this.setData({
-      x: fuck
-    })
-  },
+  // selectedNav(e) {
+  //   const fuck = e.currentTarget.dataset.index
+  //   console.log(fuck);
+  //   this.setData({
+  //     x: fuck
+  //   })
+  // },
 
   onLoad: function() {
     if (app.globalData.userInfo) {

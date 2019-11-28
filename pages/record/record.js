@@ -11,20 +11,22 @@ Page({
     answersA: {},
     answersB: {},
     answersC: {},
-    answersD: {}
+    answersD: {},
+    rightAnswer:{},
+    myAnswer:{}
   },
   openConfirm(e) {
-    console.log(e.currentTarget.dataset)
     this.setData({
       dialogShow: true,
       itemContent: e.currentTarget.dataset.item.name,
       details: e.currentTarget.dataset.item.details,
+      rightAnswer: e.currentTarget.dataset.item.right_answer,
+      myAnswer:e.currentTarget.dataset.item.my_answer,
       answersA: e.currentTarget.dataset.item.answers[0],
       answersB: e.currentTarget.dataset.item.answers[1],
       answersC: e.currentTarget.dataset.item.answers[2],
       answersD: e.currentTarget.dataset.item.answers[3],
     })
-    console.log(e.currentTarget.dataset.item.answers[0].name)
   },
   tapDialogButton(){
     this.setData({
@@ -50,7 +52,6 @@ Page({
           this.setData({
             subject: res.data.data
           })
-          console.log(res.data.data);
         },
         fail: function(e) {
 
@@ -75,8 +76,6 @@ Page({
         this.setData({
           subject: res.data.data
         })
-
-        console.log(res.data.data);
       },
       fail: function(e) {
 

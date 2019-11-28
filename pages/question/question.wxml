@@ -1,9 +1,29 @@
+<!-- pages/record/record.wxml -->
 <view class="container">
   <view class="record_title">筛选时间</view>
   <picker mode="date" value="{{date}}" start="2015-09-01" end="2021-09-01" fields="month" bindchange="bindDateChange">
     <view class="chosen">当前选择: {{data}}</view>
   </picker>
   <view class="chosen_title">{{data}}</view>
-  <navigator wx:for="{{subject}}" wx:key="{{index}}" class="chosen_content">{{item.name}}<image class="chosen_content_icon" src="../../image/right.png"></image>
-  </navigator>
+  <!-- <view wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}"> -->
+  <!-- {{item.name}}<image class="chosen_content_icon" src="../../image/right.png"></image> -->
+  <mp-cells ext-class="my-cells">
+      <mp-cell wx:if="{{subject.length==0}}" class='none'>当前时间 ({{data}}) 没有记录</mp-cell>
+
+    <mp-cell link="true" hover="true" value="{{item.name}}" wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}" class="chosen_content"></mp-cell>
+  </mp-cells>
+  <!-- </view> -->
+  <mp-dialog title='回顾答题' show="{{dialogShow}}" buttons="{{confirm}}" bindbuttontap="tapDialogButton" mask="true">
+    <view class="dialog_title">{{itemContent}}</view>
+    <view class="chosen_dialog">
+      <view>
+        <text class="text {{myAnswer==answersA.id ? 'text_wrong' :''}} {{rightAnswer == answersA.id ? 'text_right':''}}">A</text>{{answersA.name}}</view>
+      <view>
+        <text class="text {{myAnswer==answersB.id ? 'text_wrong' :''}} {{rightAnswer == answersB.id ? 'text_right':''}}">B</text> {{answersB.name}}</view>
+      <view>
+        <text class="text {{myAnswer==answersC.id ? 'text_wrong' :''}} {{rightAnswer == answersC.id ? 'text_right':''}}">C</text> {{answersC.name}}</view>
+      <view>
+        <text class="text {{myAnswer==answersD.id ? 'text_wrong' :''}} {{rightAnswer == answersD.id ? 'text_right':''}}">D</text> {{answersD.name}}</view>
+    </view>
+  </mp-dialog>
 </view>

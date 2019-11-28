@@ -1,11 +1,36 @@
 <view class="container">
-<view class="nav_bar">
+<!-- <view class="nav_bar">
   <text wx:for="{{nav}}" 
     wx:key="{{index}}"
     data-index="{{index}}"
     bindtap="selectedNav" 
     class="{{index==x ? 'selectedItem':''}}">
    {{item.name}}</text>
+</view> -->
+<swiper indicator-dots="true"
+        autoplay="true" interval="4000" duration="1000">
+          <swiper-item >
+            <image  src="../../image/pic1.png">
+            </image>
+          </swiper-item>
+        
+          <swiper-item>
+            <image  src="../../image/pic2.jpg">
+            </image>
+          </swiper-item>
+          <swiper-item>
+            <image  src="../../image/pic3.png">
+            </image>
+          </swiper-item>
+          <swiper-item>
+            <image  src="../../image/pic4.png">
+            </image>
+          </swiper-item>
+        
+      </swiper>
+  
 </view>
-</view>
+<image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+  
+</image>
 
