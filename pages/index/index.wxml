@@ -13,7 +13,6 @@
             <image  src="../../image/pic1.png">
             </image>
           </swiper-item>
-        
           <swiper-item>
             <image  src="../../image/pic2.jpg">
             </image>
@@ -26,11 +25,7 @@
             <image  src="../../image/pic4.png">
             </image>
           </swiper-item>
-        
       </swiper>
-  
 </view>
-<image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
-  
-</image>
+
 
