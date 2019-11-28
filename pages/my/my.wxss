@@ -59,3 +59,11 @@
 .about{
   margin-top: 20rpx;
 }
+.serv_btn{
+  background-color: white;
+  display: inline;
+  padding: 0;
+  color:#666;
+  font-size: 30rpx;
+  font-weight: normal;
+}

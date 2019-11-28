@@ -68,3 +68,19 @@
   margin-bottom: 20rpx;
   display: inline-block;
 }
+.text{
+  display: inline-block;
+  border-radius: 50%;
+  border:1rpx solid #999;
+  width: 45rpx;
+  height: 45rpx;
+  text-align: center;
+}
+.text_right{
+  background: rgb(0, 167, 14);
+  color:#fff;
+}
+.text_wrong{
+  background: red;
+  color:#fff;
+}

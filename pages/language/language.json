@@ -2,7 +2,8 @@
   "usingComponents": {
     "mp-dialog": "../../weui/dialog/dialog",
     "mp-cells": "../../weui/cells/cells",
-    "mp-cell": "../../weui/cell/cell"
+    "mp-cell": "../../weui/cell/cell",
+    "mp-toptips": "../../weui/toptips/toptips"
   },
   "navigationBarTitleText": "编程语言"
 }

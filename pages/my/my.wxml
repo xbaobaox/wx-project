@@ -22,10 +22,12 @@
       <text>编程语言</text>
     </navigator>
     <navigator class="service">
-      <image src="/image/沟通.png"></image>
-      <text>客服</text>
+      <button open-type="contact" bindcontact="handleContact" class="serv_btn">
+        <image src="/image/沟通.png"></image>
+        <text>客服</text>
+      </button>
     </navigator>
-    <navigator class="about">
+    <navigator class="about" url="../about/about">
       <image src="/image/关于.png"></image>
       <text>关于</text>
     </navigator>

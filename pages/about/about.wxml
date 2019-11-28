@@ -1,0 +1,11 @@
+<!--pages/about/about.wxml-->
+<view class="box">
+  <image src="/image/about.png" class="aboutImg"></image>
+  <view class="title">一个面试题</view>
+  <view class="versions">Version 2.0.1</view>
+  <view class="cont1">一个面试题</view>
+  <view class="cont2">不只是一个面试题</view>
+  <view class="cont2">是 随时随地可以学习基础知识</view>
+  <view class="cont2">是 随时随地可以准备一个面试题</view>
+  <view class="cont3">Copyright©2020 blog.shuipingguo.com</view>
+</view>

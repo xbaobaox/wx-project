@@ -1,7 +1,7 @@
 // pages/language/language.js
 Page({
   data: {
-
+    showTips:false,
     focus: [{
       image: '../../image/前端.png',
       name: '前端'
@@ -39,7 +39,11 @@ Page({
     let arr=e.currentTarget.dataset.arr;
     let anArr=e.currentTarget.dataset.anarr;
     if(arr.length==1){
-         index=1
+         index=100
+         this.setData({
+           showTips:true
+         })
+
     }
     let addItem=anArr.concat(arr.splice(index,1));
     this.setData({

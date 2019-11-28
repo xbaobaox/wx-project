@@ -1,3 +1,4 @@
+@import "weui/weui-wxss/dist/style/weui.wxss";
 .container {
   height: 100vh;
   box-sizing: border-box;

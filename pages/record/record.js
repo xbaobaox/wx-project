@@ -8,21 +8,21 @@ Page({
     }],
     itemContent: '',
     details: '',
-    answersA: [],
-    answersB: [],
-    answersC: [],
-    answersD: []
-    
+    answersA: {},
+    answersB: {},
+    answersC: {},
+    answersD: {}
   },
   openConfirm(e) {
+    console.log(e.currentTarget.dataset)
     this.setData({
       dialogShow: true,
       itemContent: e.currentTarget.dataset.item.name,
       details: e.currentTarget.dataset.item.details,
-      answersA: e.currentTarget.dataset.item.answers[0].name,
-      answersB: e.currentTarget.dataset.item.answers[1].name,
-      answersC: e.currentTarget.dataset.item.answers[2].name,
-      answersD: e.currentTarget.dataset.item.answers[3].name,
+      answersA: e.currentTarget.dataset.item.answers[0],
+      answersB: e.currentTarget.dataset.item.answers[1],
+      answersC: e.currentTarget.dataset.item.answers[2],
+      answersD: e.currentTarget.dataset.item.answers[3],
     })
     console.log(e.currentTarget.dataset.item.answers[0].name)
   },
@@ -50,7 +50,7 @@ Page({
           this.setData({
             subject: res.data.data
           })
-          console.log(res.data.data.length);
+          console.log(res.data.data);
         },
         fail: function(e) {
 

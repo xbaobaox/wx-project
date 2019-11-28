@@ -11,13 +11,17 @@
     <mp-cell link="true" hover="true" value="{{item.name}}" wx:for="{{subject}}" wx:key="{{index}}" bindtap="openConfirm" data-item="{{item}}" class="chosen_content"></mp-cell>
   </mp-cells>
   <!-- </view> -->
-  <mp-dialog title='回顾答题' show="{{dialogShow}}" buttons="{{confirm}}" bindbuttontap="tapDialogButton" mask="true" >
-      <view class="dialog_title">{{itemContent}}</view>
+  <mp-dialog title='回顾答题' show="{{dialogShow}}" buttons="{{confirm}}" bindbuttontap="tapDialogButton" mask="true">
+    <view class="dialog_title">{{itemContent}}</view>
     <view class="chosen_dialog">
-      <view>A: {{answersA}}</view>
-      <view>B: {{answersB}}</view>
-      <view>C: {{answersC}}</view>
-      <view>D: {{answersD}}</view>
+      <view>
+        <text class="text {{answerA.right_answer==answerA.answers[0].id ? 'text_right':''}}">A</text> {{answersA.name}}</view>
+      <view>
+        <text class="text ">B</text> {{answersB.name}}</view>
+      <view>
+        <text class="text">C</text> {{answersC.name}}</view>
+      <view>
+        <text class="text">D</text> {{answersD.name}}</view>
     </view>
   </mp-dialog>
 </view>
