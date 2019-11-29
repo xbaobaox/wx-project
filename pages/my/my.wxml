@@ -17,7 +17,7 @@
       <image src="/image/出题记录.png"></image>
       <text>出题记录</text>
     </navigator>
-    <navigator class="language">
+    <navigator class="language" url='../language/language'>
       <image src="/image/编程语言.png"></image>
       <text>编程语言</text>
     </navigator>

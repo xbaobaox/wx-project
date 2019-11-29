@@ -1,9 +1,9 @@
 {
   "usingComponents": {
-    "mp-dialog":"../../weui/dialog/dialog",
-    "mp-cells":"../../weui/cells/cells",
-    "mp-cell":"../../weui/cell/cell"
-    
+    "mp-dialog": "../../weui/dialog/dialog",
+    "mp-cells": "../../weui/cells/cells",
+    "mp-cell": "../../weui/cell/cell",
+    "mp-slideview": "../../weui/slideview/slideview"
   },
   "navigationBarTitleText": "一个面试题"
 }

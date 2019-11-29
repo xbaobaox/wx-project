@@ -1,5 +1,5 @@
 <view class="container">
-<!-- <view class="nav_bar">
+  <!-- <view class="nav_bar">
   <text wx:for="{{nav}}" 
     wx:key="{{index}}"
     data-index="{{index}}"
@@ -7,25 +7,33 @@
     class="{{index==x ? 'selectedItem':''}}">
    {{item.name}}</text>
 </view> -->
-<swiper indicator-dots="true"
-        autoplay="true" interval="4000" duration="1000">
-          <swiper-item >
-            <image  src="../../image/pic1.png">
-            </image>
-          </swiper-item>
-          <swiper-item>
-            <image  src="../../image/pic2.jpg">
-            </image>
-          </swiper-item>
-          <swiper-item>
-            <image  src="../../image/pic3.png">
-            </image>
-          </swiper-item>
-          <swiper-item>
-            <image  src="../../image/pic4.png">
-            </image>
-          </swiper-item>
-      </swiper>
+  <swiper indicator-dots="true" autoplay="true" interval="4000" duration="1000">
+    <swiper-item>
+      <image src="../../image/pic1.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/pic2.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/pic3.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/pic4.png"></image>
+    </swiper-item>
+  </swiper>
+  <mp-cells ext-class="my-cells" title='我的题库' class="relative">
+    <navigator class="language" url='../language/language' class='a'>全部题库></navigator>
+    <mp-slideview buttons='{{slideButtons}}' bindbuttontap='slideButtonTap'>
+      <mp-cell link hover>
+        <image src="../../image/前端.png" style="margin-right: 16px;vertical-align: middle;width:40px; height: 40px;"></image>
+        <view class="cont">
+          <view class="top">
+            <text class="title">前端</text>
+            <text class="title_tips">最贴近用户、最贴心产品</text>
+          </view>
+          <view class="bott">前端基础、vue、react、Node等</view>
+        </view>
+      </mp-cell>
+    </mp-slideview>
+  </mp-cells>
 </view>
-
-
