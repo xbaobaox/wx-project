@@ -1,119 +1,130 @@
 // pages/language/language.js
 Page({
   data: {
-    showTips:false,
+    showTips: false,
     focus: [{
       image: '../../image/前端.png',
       name: '前端'
-    }, ],
+    },],
     unfocused: [{
-        image: '../../image/python.png',
-        name: 'Python'
-      },
-      {
-        image: '../../image/java.png',
-        name: 'Java'
-      },
-      {
-        image: '../../image/_mysql.png',
-        name: 'MySQL'
-      },
-      {
-        image: '../../image/大数据.png',
-        name: '大数据'
-      },
-      {
-        image: '../../image/Android.png',
-        name: 'Android'
-      },
-      {
-        image: '../../image/ios.png',
-        name: 'ios'
-      },
+      image: '../../image/python.png',
+      name: 'Python'
+    },
+    {
+      image: '../../image/java.png',
+      name: 'Java'
+    },
+    {
+      image: '../../image/_mysql.png',
+      name: 'MySQL'
+    },
+    {
+      image: '../../image/大数据.png',
+      name: '大数据'
+    },
+    {
+      image: '../../image/Android.png',
+      name: 'Android'
+    },
+    {
+      image: '../../image/ios.png',
+      name: 'ios'
+    },
     ]
-    
   },
 
-  focusTap (e) {
+  focusTap(e) {
     let index = e.currentTarget.dataset.index;
-    let arr=e.currentTarget.dataset.arr;
-    let anArr=e.currentTarget.dataset.anarr;
-    if(arr.length==1){
-         index=100
-         this.setData({
-           showTips:true
-         })
-
+    let arr = e.currentTarget.dataset.arr;
+    let anArr = e.currentTarget.dataset.anarr;
+    if (arr.length == 1) {
+      index = 100
+      this.setData({
+        showTips: true
+      })
     }
-    let addItem=anArr.concat(arr.splice(index,1));
-    this.setData({
-      focus:arr,
-      unfocused:addItem
-    })
-  },
-  unfocusedTap (e) {
-    const index = e.currentTarget.dataset.index;
-    let arr=e.currentTarget.dataset.arr;
-    let anArr=e.currentTarget.dataset.anarr;
     let addItem = anArr.concat(arr.splice(index, 1));
     this.setData({
-      focus:addItem,
-      unfocused:arr
+      focus: arr,
+      unfocused: addItem
+    })
+    wx.setStorage({
+      key: "key",
+      data: [1, 2, 3, 4]
+    })
+    wx.getStorage({
+      key: "key",
+      success(res) {
+        console.log(res.data)
+      }
+    })
+  },
+  unfocusedTap(e) {
+    const index = e.currentTarget.dataset.index;
+    let arr = e.currentTarget.dataset.arr;
+    let anArr = e.currentTarget.dataset.anarr;
+    let addItem = anArr.concat(arr.splice(index, 1));
+    this.setData({
+      focus: addItem,
+      unfocused: arr
+    })
+    wx.setStorage({
+      key1: "key1",
+      data1: "value1"
     })
   },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function(options) {
-
+  onLoad: function (options) {
+    console.log('onLoad')
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
-
+  onReady: function () {
+    console.log('onReady')
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function() {
-
+  onShow: function () {
+    console.log('onShow')
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
-  onHide: function() {
-
+  onHide: function () {
+    console.log('onHide')
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
-  onUnload: function() {
-
+  onUnload: function () {
+    console.log('onUnLoad')
   },
-
   /**
    * 页面相关事件处理函数--监听用户下拉动作
    */
-  onPullDownRefresh: function() {
+  onPullDownRefresh: function () {
 
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom: function() {
+  onReachBottom: function () {
 
   },
 
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function() {
+  onShareAppMessage: function () {
 
   }
 })
