@@ -19,9 +19,16 @@
 swiper-item image {
   width: 100vh;
 }
+.box{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
 .cont {
   display: inline-block;
-  vertical-align: -18rpx;
+}
+.top{
+  margin-bottom: 10rpx;
 }
 .title {
   font-size: 34rpx;

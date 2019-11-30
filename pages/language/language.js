@@ -6,7 +6,7 @@ Page({
       image: '../../image/前端.png',
       name: '前端',
       tips: '最贴近用户、最贴心产品',
-      content:'前端基础、vue、react、Node等'
+      content: '前端基础、vue、react、Node等'
     },],
     unfocused: [{
       image: '../../image/python.png',
@@ -32,7 +32,8 @@ Page({
       image: '../../image/ios.png',
       name: 'ios'
     },
-    ]
+    ],
+    myLan:[]
   },
 
   focusTap(e) {
@@ -64,40 +65,44 @@ Page({
       focus: addItem,
       unfocused: arr
     })
+    wx.setStorage({
+      key: "menu",
+      data: JSON.stringify(this.data.focus)
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+
   },
   /**
    * 页面相关事件处理函数--监听用户下拉动作

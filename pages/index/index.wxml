@@ -25,13 +25,15 @@
     <navigator class="language" url='../language/language' class='a'>全部题库></navigator>
     <mp-slideview buttons='{{slideButtons}}' bindbuttontap='slideButtonTap'>
       <mp-cell link hover wx:for="{{myLan}}" wx:key="{{key}}">
-        <image src="{{item.image}}" style="margin-right: 16px;vertical-align: middle;width:40px; height: 40px;"></image>
-        <view class="cont">
-          <view class="top">
-            <text class="title">{{item.name}}</text>
-            <text class="title_tips">{{item.tips}}</text>
+        <view class="box">
+          <image src="{{item.image}}" style="margin-right: 16px;vertical-align: middle;width:40px; height: 40px;" class="image"></image>
+          <view class="cont">
+            <view class="top">
+              <text class="title">{{item.name}}</text>
+              <text class="title_tips">{{item.tips}}</text>
+            </view>
+            <view class="bott">{{item.content}}</view>
           </view>
-          <view class="bott">{{item.content}}</view>
         </view>
       </mp-cell>
     </mp-slideview>
