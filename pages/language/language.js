@@ -4,7 +4,9 @@ Page({
     showTips: false,
     focus: [{
       image: '../../image/前端.png',
-      name: '前端'
+      name: '前端',
+      tips: '最贴近用户、最贴心产品',
+      content:'前端基础、vue、react、Node等'
     },],
     unfocused: [{
       image: '../../image/python.png',
@@ -49,14 +51,8 @@ Page({
       unfocused: addItem
     })
     wx.setStorage({
-      key: "key",
-      data: [1, 2, 3, 4]
-    })
-    wx.getStorage({
-      key: "key",
-      success(res) {
-        console.log(res.data)
-      }
+      key: "menu",
+      data: JSON.stringify(this.data.focus)
     })
   },
   unfocusedTap(e) {
@@ -67,10 +63,6 @@ Page({
     this.setData({
       focus: addItem,
       unfocused: arr
-    })
-    wx.setStorage({
-      key1: "key1",
-      data1: "value1"
     })
   },
   /**

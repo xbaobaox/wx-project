@@ -24,14 +24,14 @@
   <mp-cells ext-class="my-cells" title='我的题库' class="relative">
     <navigator class="language" url='../language/language' class='a'>全部题库></navigator>
     <mp-slideview buttons='{{slideButtons}}' bindbuttontap='slideButtonTap'>
-      <mp-cell link hover>
-        <image src="../../image/前端.png" style="margin-right: 16px;vertical-align: middle;width:40px; height: 40px;"></image>
+      <mp-cell link hover wx:for="{{myLan}}" wx:key="{{key}}">
+        <image src="{{item.image}}" style="margin-right: 16px;vertical-align: middle;width:40px; height: 40px;"></image>
         <view class="cont">
           <view class="top">
-            <text class="title">前端</text>
-            <text class="title_tips">最贴近用户、最贴心产品</text>
+            <text class="title">{{item.name}}</text>
+            <text class="title_tips">{{item.tips}}</text>
           </view>
-          <view class="bott">前端基础、vue、react、Node等</view>
+          <view class="bott">{{item.content}}</view>
         </view>
       </mp-cell>
     </mp-slideview>
