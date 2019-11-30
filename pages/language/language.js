@@ -88,7 +88,15 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    wx.getStorage({
+      key: "menu",
+      success: res => {
+        this.setData({
+          myLan: JSON.parse(res.data),
+        })
+        console.log(res.data)
+      }
+    })
   },
 
   /**

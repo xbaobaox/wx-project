@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/language/language",
+    "pages/index/index",
     "pages/my/my",
     "pages/question/question",
     "pages/record/record",
