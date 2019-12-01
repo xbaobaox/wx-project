@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/tips/tips",
+    "pages/my/my",
     "pages/language/language",
     "pages/index/index",
-    "pages/my/my",
     "pages/question/question",
     "pages/record/record",
     "pages/about/about",
-    "pages/tips/tips",
     "pages/logs/logs"
   ],
   "window": {
@@ -26,10 +26,10 @@
         "selectedIconPath": "/image/首页.png"
       },
       {
-        "text": "提示",
+        "text": "积分",
         "pagePath": "pages/tips/tips",
-        "iconPath": "image/提示 (1).png",
-        "selectedIconPath": "image/提示.png"
+        "iconPath": "image/积分 (2).png",
+        "selectedIconPath": "image/积分.png"
       },
       {
         "text": "我的",

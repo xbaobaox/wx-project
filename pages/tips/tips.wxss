@@ -1,1 +1,4 @@
-/* pages/tips/tips.wxss */
+.image{
+  width: 414px;
+  height: 150px;
+}

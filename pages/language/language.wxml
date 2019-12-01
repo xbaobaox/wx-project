@@ -1,19 +1,24 @@
 <view class="container">
   <mp-cells title="我关注的面试题库（点击 取消关注题库）" class="focus_title">
-    <mp-cell link hover wx:for="{{myLan}}" wx:key="{{index}}" data-index="{{index}}" data-arr="{{focus}}" data-anArr="{{unfocused}}" class="focus_cont" bindtap="focusTap">
-      <image slot="icon" src="{{item.image}}" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+    <mp-cell link hover 
+      wx:for="{{myLan}}" 
+      wx:key="{{index}}" 
+      data-index="{{index}}" 
+      class="focus_cont" 
+      bindtap="focusTap">
+      <image slot="icon" 
+      src="{{item.image}}" 
+      style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
       {{item.name}}
     </mp-cell>
     <mp-toptips msg="请至少关注一个面试题库" type="error" show="{{showTips}}"></mp-toptips>
   </mp-cells>
   <mp-cells title="推荐的面试题库(点击 关注题库)" class="unfocused_title">
-    <mp-cell wx:if="{{unfocused.length==0}}" class="wxif">你已关注所有题库,暂时没有其他题库</mp-cell>
+    <mp-cell wx:if="{{myOtherLan.length==0}}" class="wxif">你已关注所有题库,暂时没有其他题库</mp-cell>
     <mp-cell link hover 
-      wx:for="{{unfocused}}" 
+      wx:for="{{myOtherLan}}" 
       wx:key="{{index}}" 
       data-index="{{index}}" 
-      data-arr="{{unfocused}}" 
-      data-anArr="{{focus}}" 
       class="unfocused_cont" 
       bindtap="unfocusedTap">
       <image slot="icon" 
