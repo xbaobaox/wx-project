@@ -10,10 +10,19 @@
       <image src="../../image/礼品3.jpg" class="image"></image>
     </swiper-item>
   </swiper>
+  <view>
+    <text class="couts">您的积分:</text>
+    <text>0</text>
+  </view>
   <view>全部礼品</view>
   <view class="box">
-    <view>
-    
+    <view class="cont">
+      <image src='../../image/iphone11.webp' class="box_image"></image>
+      <view class="title">iphone11 Max</view>
+      <view class="bottom">
+        <text>余</text>
+        <text>0</text>
+      </view>
     </view>
   </view>
 </view>
