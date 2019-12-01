@@ -17,11 +17,45 @@
   <view>全部礼品</view>
   <view class="box">
     <view class="cont">
-      <image src='../../image/iphone11.webp' class="box_image"></image>
+      <image src='../../image/iphone11.webp' class="cont_image"></image>
       <view class="title">iphone11 Max</view>
       <view class="bottom">
-        <text>余</text>
-        <text>0</text>
+        <text>余<text>0</text></text> <text class="total">99999积分</text>
+      </view>
+    </view>
+    <view class="cont">
+      <image src='../../image/iphone11.webp' class="cont_image"></image>
+      <view class="title">iphone11 Max</view>
+      <view class="bottom">
+        <text>余<text>0</text></text> <text class="total">99999积分</text>
+      </view>
+    </view>
+    <view class="cont">
+      <image src='../../image/iphone11.webp' class="cont_image"></image>
+      <view class="title">iphone11 Max</view>
+      <view class="bottom">
+        <text>余<text>0</text></text> <text class="total">99999积分</text>
+      </view>
+    </view>
+    <view class="cont">
+      <image src='../../image/iphone11.webp' class="cont_image"></image>
+      <view class="title">iphone11 Max</view>
+      <view class="bottom">
+        <text>余<text>0</text></text> <text class="total">99999积分</text>
+      </view>
+    </view>
+    <view class="cont">
+      <image src='../../image/iphone11.webp' class="cont_image"></image>
+      <view class="title">iphone11 Max</view>
+      <view class="bottom">
+        <text>余<text>0</text></text> <text class="total">99999积分</text>
+      </view>
+    </view>
+    <view class="cont">
+      <image src='../../image/iphone11.webp' class="cont_image"></image>
+      <view class="title">iphone11 Max</view>
+      <view class="bottom">
+        <text>余<text>0</text></text> <text class="total">99999积分</text>
       </view>
     </view>
   </view>
