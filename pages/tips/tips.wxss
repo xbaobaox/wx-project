@@ -1,27 +1,52 @@
+@import "../../weui/weui-wxss/dist/style/weui.wxss";
 .image {
   width: 414px;
   height: 150px;
 }
+.swiper{
+  transform: scale(.9);
+  position: absolute;
+  top: 0px;
+  z-index: 10;
+}
+.style_top{
+  width: 100vh;
+  height:200rpx;
+  background: rgb(249,89,86);
+}
+.style_bott{
+  width: 100vh;
+  height: 80rpx;
+  background: rgb(201, 206, 201);
+}
+.counts{
+  color:#333;
+}
 .box{
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
+.shop_title{
+  margin:20rpx 0;
+  font-size: 32rpx;
+  font-weight: bold
+}
 .cont {
-  margin-top: 20rpx;
-  margin-bottom: 20rpx;
+  margin: 20rpx;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 300rpx;
   background-color: #fff;
-  border-radius: 8rpx;
+  border-radius: 12rpx;
 }
 .cont_image {
   width: 125px;
   height: 125px;
-  margin-top:20rpx;
+  margin-top:10rpx;
   margin-bottom: 30rpx;
+  border-radius: 12rpx;
 }
 .title {
   color: #333;

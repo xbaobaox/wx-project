@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-
+    "mp-dialog": "../../weui/dialog/dialog"
   },
   "navigationBarTitleText": "积分"
 }
