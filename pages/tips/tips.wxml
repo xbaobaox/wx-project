@@ -24,36 +24,36 @@
       </view>
     </view>
     <view class="cont">
-      <image src='../../image/iphone11.webp' class="cont_image"></image>
-      <view class="title">iphone11 Max</view>
+      <image src='../../image/华为电视.webp' class="cont_image"></image>
+      <view class="title">华为电视</view>
       <view class="bottom">
         <text>余<text>0</text></text> <text class="total">99999积分</text>
       </view>
     </view>
     <view class="cont">
-      <image src='../../image/iphone11.webp' class="cont_image"></image>
-      <view class="title">iphone11 Max</view>
+      <image src='../../image/kindle.webp' class="cont_image"></image>
+      <view class="title">kindle</view>
       <view class="bottom">
         <text>余<text>0</text></text> <text class="total">99999积分</text>
       </view>
     </view>
     <view class="cont">
-      <image src='../../image/iphone11.webp' class="cont_image"></image>
-      <view class="title">iphone11 Max</view>
+      <image src='../../image/ps4.webp' class="cont_image"></image>
+      <view class="title">ps4</view>
       <view class="bottom">
         <text>余<text>0</text></text> <text class="total">99999积分</text>
       </view>
     </view>
     <view class="cont">
-      <image src='../../image/iphone11.webp' class="cont_image"></image>
-      <view class="title">iphone11 Max</view>
+      <image src='../../image/iwatch5.webp' class="cont_image"></image>
+      <view class="title">iwatch5</view>
       <view class="bottom">
         <text>余<text>0</text></text> <text class="total">99999积分</text>
       </view>
     </view>
     <view class="cont">
-      <image src='../../image/iphone11.webp' class="cont_image"></image>
-      <view class="title">iphone11 Max</view>
+      <image src='../../image/耳机.webp' class="cont_image"></image>
+      <view class="title">beats耳机</view>
       <view class="bottom">
         <text>余<text>0</text></text> <text class="total">99999积分</text>
       </view>

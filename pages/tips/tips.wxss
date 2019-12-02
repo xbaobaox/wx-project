@@ -20,6 +20,7 @@
 .cont_image {
   width: 125px;
   height: 125px;
+  margin-top:20rpx;
   margin-bottom: 30rpx;
 }
 .title {
