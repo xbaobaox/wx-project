@@ -1,6 +1,5 @@
 <view class="container">
-  <view class="style_top"></view>
-  <view class="style_bott"></view>
+
   <swiper indicator-dots="true" autoplay="true" interval="4000" duration="1000" class="swiper">
     <swiper-item>
       <image src="../../image/礼品1.jpg" class="image"></image>
@@ -12,6 +11,8 @@
       <image src="../../image/礼品3.jpg" class="image"></image>
     </swiper-item>
   </swiper>
+  <view class="style_top"></view>
+  <view class="style_bott"></view>
   <view>
     <text class="counts">您的积分:</text>
     <text class="counts">0</text>
@@ -67,7 +68,7 @@
       </view>
     </view>
     <mp-dialog show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
-        <text>确认花费99999积分兑换礼品吗?</text>
+      <text>确认花费99999积分兑换礼品吗?</text>
     </mp-dialog>
   </view>
 </view>

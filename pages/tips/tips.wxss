@@ -8,6 +8,7 @@
   position: absolute;
   top: 0px;
   z-index: 10;
+  width: 415px;
 }
 .style_top{
   width: 100vh;
@@ -44,7 +45,7 @@
 .cont_image {
   width: 125px;
   height: 125px;
-  margin-top:10rpx;
+  margin-top:20rpx;
   margin-bottom: 30rpx;
   border-radius: 12rpx;
 }
